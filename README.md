@@ -1,5 +1,8 @@
 # Go RabbitMQ Auto-Reconnect Project
 
+[![go-github release (latest SemVer)](https://img.shields.io/github/v/release/afaf-tech/go-rabbitmq?sort=semver)](https://github.com/afaf-tech/go-rabbitmq/releases)
+[![](https://godoc.org/github.com/afaf-tech/go-rabbitmq?status.svg)](https://godoc.org/github.com/afaf-tech/go-rabbitmq)
+
 This project demonstrates a simple implementation of a RabbitMQ consumer and producer in Go with automatic reconnection capabilities.
 
 Explores the hypothesis of using a single connection for many channels, both for producers and consumers, in a RabbitMQ setup. This architectural choice aims to optimize resource usage and improve performance in scenarios with a large number of channels.
