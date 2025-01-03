@@ -10,7 +10,6 @@ Explores the hypothesis of using a single connection for many channels, both for
 
 ## Requirements
 - go 1.21
-- docker
 
 ### Installation
 
