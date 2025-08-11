@@ -121,7 +121,7 @@ func (c *Consumer) Start(ctx context.Context, handler func(ctx context.Context, 
 			msg := &Message{
 				Body:       d.Body,
 				Ack:        func() { d.Ack(false) },
-				Nack:       func() { d.Nack(false, true) },
+				Nack:       func() { d.Nack(false, false) }, // Don't requeue by default
 				Reject:     func() { d.Reject(false) },
 				QueueName:  c.queueName,
 				ConsumerID: c.name,

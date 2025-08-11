@@ -8,6 +8,8 @@
 *.so
 *.dylib
 
+# github 
+.github
 # Test binary, built with `go test -c`
 *.test
 
@@ -19,3 +21,4 @@
 
 # Go workspace file
 # go.work
+
