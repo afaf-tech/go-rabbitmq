@@ -162,8 +162,9 @@ func (c *Connection) Close() error {
 				_ = ch.Close()
 			}
 		}
+		err := c.Connection.Close()
 		c.Connection = nil
-		return c.Connection.Close()
+		return err
 	}
 	return nil
 }
